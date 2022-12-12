@@ -1,0 +1,60 @@
+.bloom {
+  background: aquamarine;
+  color: black;
+}
+
+::selection {
+  background: hotpink;
+}
+
+[href] {
+  color: inherit;
+}
+
+@media (prefers-color-scheme: dark) {
+  .bloom {
+    background: darkviolet;
+    color: mistyrose;
+  }
+
+  ::selection {
+    background: deeppink;
+  }
+}
+
+body,
+figure,
+footer {
+  margin: 0;
+  contain: content;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.blurb {
+  flex-basis: 50%;
+  font-family: monospace;
+}
+
+.barcode {
+  font-family: "Libre Barcode 39 Text", monospace;
+}
+
+.chime {
+  font-size: 3vmax;
+}
+
+.dilate {
+  font-size: 18vmax;
+}
+
+@media (orientation: portrait) {
+  .bed {
+    transform: rotate(90deg);
+  }
+}
